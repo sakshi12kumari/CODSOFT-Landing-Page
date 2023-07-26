@@ -1,0 +1,159 @@
+
+#navbar{flex-direction: column;}
+#navbar ul li a {
+    
+    padding: 7px 8px;
+    color: white;
+    font-size: 0.8rem;
+
+}
+#home{
+    height: 860px;
+    flex-direction:column ;
+}
+#intro{
+    width: 100%;
+    padding-top: 2px;
+    margin: auto;
+}
+#intro h1{
+   margin-top:0px;
+   font-size: 27px;
+   padding-top: 2px;
+}
+#intro p{
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+}
+#register{
+    width:72%;
+    padding: 0px;
+    margin: auto;
+}
+#register h1{
+    margin-top:20px;
+  font-size:19px ;
+}
+#register form{
+    width:75%;
+    margin: auto;
+    padding-left: 0px;
+}
+#register form input,
+#register form textarea {
+    width: auto;
+    padding: 4px;
+    font-size: 8px;
+
+}
+
+#register form select {
+    font-size: 8px;
+    width: auto;
+    padding: 4px;
+}
+#intro .btn{
+    width:30%;
+}
+#register form .btn {
+    width: 52%;
+}
+#home::before{
+    height: 970px;
+}
+#about-container{
+ height:auto;
+}
+#about-container::before{
+    height: 490px;
+}
+#about h1 {
+    font-size: 38px;
+
+}
+
+#about p {
+    
+    letter-spacing: 0px;
+    line-height: 22px;
+    font-size: 20px;
+    padding: 36px;
+    padding-top: 17px;
+    
+}
+.room{
+    flex-direction: column;
+    
+}
+#room-container{
+    margin-top: -13px;
+}
+#room-container h1{
+    font-size: 38px;
+}
+.room .box{
+    width: auto;
+    
+}
+.room .box img{
+    width: 100%;
+    margin: 0px;
+    display: block;
+    height:432px;
+}
+.facilities{
+    flex-direction: column;
+    
+}
+#facilities-container h1{
+    font-size: 38px;
+}
+.facilities .item{
+    width: auto;
+    
+}
+.facilities .item img{
+    width: 100%;
+    margin: 0px;
+    display: block;
+    height:432px;
+    overflow: hidden;
+}
+
+#contact-container{
+    flex-direction: column-reverse;
+}
+#contact-container::before{
+    height:530px
+}
+.contact{
+    width:100%;
+    margin: auto;
+}
+#contact-form{
+    width:96%;
+    margin-right: 23px;
+    padding: 5px;
+}
+.contact .social-media img {
+    height: 90px;
+    width: 90px;
+}
+.icons{
+    margin:0px;
+}
+#contact-form form{
+    width:75%;
+    margin: auto;
+    padding-left: 0px;
+    margin-top:0px;
+    padding-top: 0px;
+}
+/* #contact-form form input,
+#contact-form textarea {
+    width: auto;
+    padding: 4px;
+    font-size: 8px;
+
+} */

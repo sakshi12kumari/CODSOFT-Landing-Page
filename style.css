@@ -1,0 +1,494 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navbar:logo and image */
+#logo {
+    margin: 6px 14px;
+}
+
+#logo img {
+    height: 62px;
+    width: 90px;
+
+}
+
+/* navbar:list-styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+
+#home {
+    height: 646px;
+    /* border:2px solid red; */
+    display: flex;
+
+}
+
+#home::before {
+    content: "";
+    background: url('Images/indoors-g68a54a9ce_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 726px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    /* border: 2px solid blue; */
+}
+
+#intro {
+
+    /* border: 2px solid green; */
+    width: 50%;
+    margin: 6px;
+    text-align: center;
+    padding-top: 129px;
+}
+
+#intro p {
+    /* padding-left: 25px;
+    padding-bottom: 25px; */
+    font-family: 'Pangolin', cursive;
+    /* font-family: 'Playfair Display', serif; */
+
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 24px;
+    padding: 42px;
+    padding-top: 18px;
+
+
+}
+
+#intro h1 {
+    padding-left: 0px;
+    margin-top: 9px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 40px;
+
+}
+
+#register {
+    width: 50%;
+    /* border: 2px solid green; */
+    margin: 6px;
+    align-items: center;
+    padding: 14px;
+}
+
+#register form {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    padding-left: 145px;
+    font-family: 'Pangolin', cursive;
+    /* background: white; */
+}
+
+#register h1 {
+    padding-left: 0px;
+    margin-top: 5px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#register form input,
+#register form textarea {
+    width: 97%;
+    padding: 4px;
+    border-radius: 6px;
+    border: 2px solid grey;
+    font-family: 'Pangolin', cursive;
+    font-size: 12px;
+
+}
+
+#register form select {
+    appearance: none;
+    border: 2px solid grey;
+    font-family: 'Pangolin', cursive;
+    font-size: 12px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 6px;
+    line-height: inherit;
+}
+
+.btn {
+    padding: 4px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30%;
+    font-family: 'Pangolin', cursive;
+    /* align-self: center; */
+}
+
+.btn:hover {
+    background-color: rgb(96, 30, 30);
+}
+
+#about-container {
+    position: relative;
+    /* border: 2px solid green; */
+    margin: 0px;
+    text-align: center;
+}
+
+#about-container::before {
+    content: "";
+    background: url('Images/bed-g00e3b7882_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 365px;
+    width: 100%;
+    z-index: -1;
+    opacity: 70%;
+    /* border: 2px solid blue; */
+}
+
+#about h1 {
+    padding-top: 15px;
+    margin-top: 2px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 40px;
+
+}
+
+#about p {
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 24px;
+    padding: 110px;
+    padding-top: 38px;
+    text-align: center;
+}
+
+#room-container {
+    margin-top: 0px;
+    justify-content: center;
+    /* border:2px solid olivedrab; */
+    background-color: #e0ddda;
+}
+
+#room-container h1 {
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.room {
+    display: flex;
+}
+
+.room .box {
+    border: 2px solid grey;
+    margin: 16px 5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    width: 473px;
+
+}
+
+.room .box img {
+
+    height: 200px;
+    width: 470px;
+    display: block;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-size: 27px;
+    text-align: center;
+
+    font-family: 'Pangolin', cursive;
+}
+
+.box p {
+    padding: 6px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+#about-container::before {
+    content: "";
+    position: absolute;
+    background: url('Images/bed-g00e3b7882_1280.jpg') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#about h1 {
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#room-container {
+    margin-top: 0px;
+
+    /* border:2px solid olivedrab; */
+    background-color: #e0ddda;
+}
+
+#room-container h1 {
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.room {
+    display: flex;
+}
+
+.room .box {
+    border: 2px solid grey;
+    margin: 16px 5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    width: 473px;
+
+}
+
+.room .box img {
+
+    height: 200px;
+    width: 470px;
+    display: block;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.box h2 {
+    font-size: 27px;
+    text-align: center;
+
+    font-family: 'Pangolin', cursive;
+}
+
+.box p {
+    padding: 6px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#facilities-container {
+
+    /* border: 2px solid red; */
+    background-color: #ece8fc;
+}
+
+#facilities-container h1 {
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.facilities {
+    display: flex;
+    padding: 4px;
+}
+
+.facilities .item img {
+    height: 215px;
+    width: 470px;
+    display: block;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+}
+
+.facilities .item {
+    border: 2px solid grey;
+    margin: 16px 5px;
+    border-radius: 10px;
+    background-color: #ece8fc;
+    text-align: center;
+    width: 473px;
+
+}
+
+.item h2 {
+    font-size: 27px;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Pangolin', cursive;
+}
+
+#contact-container {
+    display: flex;
+    /* border: 2px solid blue; */
+    position: relative;
+}
+
+.contact .social-media img {
+    height: 132px;
+    width: 125px;
+}
+
+.contact {
+
+    /* border: 2px solid green; */
+    width: 50%;
+    margin: 6px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#contact-form {
+    width: 50%;
+    /* border: 2px solid green; */
+    margin: 6px;
+    /* align-items: center; */
+    padding: 14px;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    padding-left: 145px;
+    font-family: 'Pangolin', cursive;
+    padding-top: 58px;
+    /* background: white; */
+}
+
+#contact-form form input,
+#contact-form form textarea {
+    width: 97%;
+    padding: 4px;
+    border-radius: 6px;
+    border: 2px solid grey;
+    font-family: 'Pangolin', cursive;
+    font-size: 12px;
+
+}
+
+.contact h1 {
+    padding-right: 0px;
+    margin-top: 4px;
+    font-family: 'Pangolin', cursive;
+    letter-spacing: 1.2px;
+    font-size: 40px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 46px;
+}
+
+#contact-container::before {
+    content: "";
+    background: url('Images/reception-ge4a61d907_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 416px;
+    width: 100%;
+    z-index: -1;
+    opacity: 90%;
+    /* border: 2px solid red; */
+}
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
